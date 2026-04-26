@@ -1,7 +1,8 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { Language, ScanResult, UserProfile, SafetyStatus, CabinetItem } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY as string });
+const apiKey = process.env.GEMINI_API_KEY || "MISSING_KEY_ERROR";
+const ai = new GoogleGenAI({ apiKey });
 
 const MODEL = "gemini-2.0-flash";
 
