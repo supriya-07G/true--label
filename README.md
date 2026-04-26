@@ -96,4 +96,3 @@ Trust Label provides information based on AI analysis of provided labels. It is 
 
 4. Click **Deploy**. Vercel will use `vercel.json` for the build config automatically.
 
-> **Note:** The Gemini API key is embedded in the client-side bundle at build time (standard for Vite SPAs without a backend). Keep your key usage monitored in [Google AI Studio](https://aistudio.google.com).
